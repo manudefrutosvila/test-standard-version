@@ -1,9 +1,11 @@
 {
   "name": "test-standard-version",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "release": "standard-version",
+    "commitmsg": "commitlint -E GIT_PARAMS"
   },
   "repository": {
     "type": "git",
@@ -14,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/manudefrutosvila/test-standard-version/issues"
   },
-  "homepage": "https://github.com/manudefrutosvila/test-standard-version#readme"
+  "homepage": "https://github.com/manudefrutosvila/test-standard-version#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-angular": "^7.0.1",
+    "husky": "^0.14.3",
+    "standard-version": "^4.4.0"
+  }
 }
